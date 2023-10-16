@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp4StackLayoutGrid.MainPage">
+
+    <Grid Padding="20"
+          RowSpacing="10"
+          RowDefinitions="Auto,Auto, *">
+
+        <HorizontalStackLayout Spacing="10"
+                               HorizontalOptions="Center"
+                               Grid.Row="0">
+            <Label
+                Text="Vertical"
+                />
+            <Button
+                Text="Start"
+                x:Name="OnVerticalStart"
+                Clicked="OnVerticalStart_Clicked"
+                />
+            <Button
+                Text="Center"
+                x:Name="OnVerticalCenter"
+                Clicked="OnVerticalCenter_Clicked"
+                />
+            <Button
+                Text="End"
+                x:Name="OnVerticalEnd"
+                Clicked="OnVerticalEnd_Clicked"
+                />
+
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Spacing="10"
+                               HorizontalOptions="Center"
+                               Grid.Row="1">
+            <Label
+                Text="Horizontal"
+                />
+            <Button
+                Text="Start"
+                x:Name="OnHorizontalStart"
+                Clicked="OnHorizontalStart_Clicked"
+                />
+            <Button
+                Text="Center"
+                x:Name="OnHorizontalCenter"
+                Clicked="OnHorizontalCenter_Clicked"
+                />
+            <Button
+                Text="End"
+                x:Name="OnHorizontalEnd"
+                Clicked="OnHorizontalEnd_Clicked"
+                />
+        </HorizontalStackLayout>
+
+        <Image
+            x:Name="Target"
+            Grid.Row="2"
+            HeightRequest="120"
+            WidthRequest="120"
+            Source="bocchitherock.jpg"
+            />
+
+    </Grid>
+
+</ContentPage>
